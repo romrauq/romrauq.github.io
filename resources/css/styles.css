@@ -11,6 +11,7 @@
 	--white: #fff;
 	--highlight-color: #0b8be5;
 	--grey-color: #f4f4f4;
+	--logo-nav: 20px;
 }
 
 /* removing default dotted style from <li> tag elements */
@@ -26,11 +27,10 @@ a {
 
 .navbar {
 	position: absolute;
-	/* top: 0;
-	left: 0; */
+
 	width: 100%;
 	display: flex;
-	font-size: 2.5rem;
+	font-size: var(--logo-nav);
 	padding: 1rem;
 	justify-content: space-between;
 	/*Add bottom border shadow*/
@@ -39,7 +39,7 @@ a {
 }
 
 .logo-image {
-	width: 25px;
+	width: var(--logo-nav);
 }
 
 .nav-text {
@@ -67,8 +67,8 @@ a {
 	right: 0;
 	bottom: 0;
 	font-size: 2rem;
-	/* background-color: var(--grey-color); */
-	background: linear-gradient(to bottom, #f4f4f4, skyblue);
+	background-color: var(--grey-color);
+	/* background: linear-gradient(to bottom, #f4f4f4, skyblue); */
 	/* height: 92vh; */
 	z-index: 5;
 }
