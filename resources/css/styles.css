@@ -20,22 +20,25 @@ li {
 
 /* removing default underline style from <a>  tag elements */
 a {
-	color: var(--soft-dark);
+	color: var(--white);
 	text-decoration: none;
 }
 
 .navbar {
-	color: #4d4848;
 	display: flex;
 	font-size: 2.5rem;
 	padding: 1rem;
-	/*Add bottom border shadow*/
 	justify-content: space-between;
-	z-index: 10;
+	/*Add bottom border shadow*/
+	background: var(--highlight-color);
+}
+
+.logo-image {
+	width: 25px;
 }
 
 .nav-text {
-	color: var(--soft-dark);
+	color: var(--white);
 }
 
 .nav-links {
@@ -43,22 +46,20 @@ a {
 }
 
 .nav-links a {
+	color: var(--white);
 	padding: 0 15px;
 }
 
 .nav-links a:hover {
 	color: skyblue;
+	transition: 0.5s;
 }
 
 .main-showcase {
 	position: relative;
-	/* top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0; */
 	font-size: 2rem;
 	background-color: var(--grey-color);
-	height: 95vh;
+	height: 91vh;
 	z-index: 5;
 }
 
@@ -77,11 +78,12 @@ a {
 
 .sub-heading {
 	color: var(--soft-dark);
+	margin: 10px 0;
 }
 
 .profile-image {
-	width: 240px;
-	height: 240px;
+	width: 220px;
+	height: 220px;
 	border-radius: 100%;
 }
 
@@ -90,6 +92,19 @@ a {
 	background-color: var(--highlight-color);
 	padding: 10px;
 	width: fit-content;
-	margin: 0 auto;
-	border-radius: 20px 5px;
+	margin: 10px auto 0 auto;
+	border: 2px solid var(--highlight-color);
+	border-radius: 20px 0;
+	cursor: pointer;
+}
+
+.call-to-action:hover {
+	color: var(--highlight-color);
+	background: var(--white);
+	border: 2px solid var(--highlight-color);
+	transition: 0.75s;
+}
+
+.call-to-action:hover a {
+	color: var(--highlight-color);
 }
