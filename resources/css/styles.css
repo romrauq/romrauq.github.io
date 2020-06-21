@@ -27,14 +27,14 @@ a {
 
 .navbar {
 	position: absolute;
-
 	width: 100%;
 	display: flex;
 	font-size: var(--logo-nav);
 	padding: 1rem;
 	justify-content: space-between;
-	/*Add bottom border shadow*/
 	background: var(--highlight-color);
+	/*Add bottom border shadow*/
+	/* box-shadow: 60px 0px black; */
 	z-index: 10;
 }
 
@@ -69,7 +69,6 @@ a {
 	font-size: 2rem;
 	background-color: var(--grey-color);
 	/* background: linear-gradient(to bottom, #f4f4f4, skyblue); */
-	/* height: 92vh; */
 	z-index: 5;
 }
 
@@ -86,17 +85,27 @@ a {
 	color: var(--highlight-color);
 }
 
+.profile-image {
+	width: 220px;
+	height: 220px;
+	margin-top: 5px;
+	border-radius: 100%;
+}
+
 .sub-heading {
 	color: var(--soft-dark);
 	margin: 10px 0;
 }
 
-.profile-image {
-	width: 220px;
-	height: 220px;
-	border-radius: 100%;
+.language-logo-group {
+	display: flex;
+	width: fit-content;
+	margin: 5px auto 0 auto;
 }
 
+.language-logos {
+	margin: 0 10px;
+}
 .call-to-action {
 	color: var(--white);
 	background-color: var(--highlight-color);
@@ -117,14 +126,4 @@ a {
 
 .call-to-action:hover a {
 	color: var(--highlight-color);
-}
-
-.language-logo-group {
-	display: flex;
-	width: fit-content;
-	margin: 5px auto 0 auto;
-}
-
-.language-logos {
-	margin: 0 10px;
 }
