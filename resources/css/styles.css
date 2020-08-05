@@ -7,10 +7,10 @@
 :root {
 	font-size: 10px;
 	font-family: sans-serif;
-	--soft-dark: #4d4848;
 	--white: #fff;
-	--highlight-color: #0b8be5;
 	--grey-color: #f4f4f4;
+	--soft-dark: #4d4848;
+	--highlight-color: #0b8be5;
 	--logo-nav: 20px;
 }
 
@@ -19,7 +19,7 @@ li {
 	list-style: none;
 }
 
-/* removing default underline style from <a>  tag elements */
+/* removing default underline style from <a> tag elements */
 a {
 	color: var(--white);
 	text-decoration: none;
@@ -36,6 +36,44 @@ a {
 	/*Add bottom border shadow*/
 	/* box-shadow: 60px 0px black; */
 	z-index: 10;
+}
+
+.side-menu-button {
+	position: fixed;
+	top: 5px;
+	right: 5px;
+	z-index: 10;
+}
+
+.side-menu {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: #111;
+	opacity: 0.9;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+}
+
+.side-menu .btn-close {
+	position: absolute;
+	top: 0;
+	right: 22px;
+	font-size: 36px;
+	margin-left: -150px;
+}
+
+.side-menu a {
+	padding: 10px 10px 10px 30px;
+	text-decoration: none;
+	font-size: 22px;
+	color: #ccc;
+	display: block;
+	transition: 0.3s;
 }
 
 .logo-image {
@@ -83,6 +121,7 @@ a {
 
 .heading-text {
 	color: var(--highlight-color);
+	margin-bottom: 5px;
 }
 
 .profile-image {
@@ -92,9 +131,9 @@ a {
 	border-radius: 100%;
 }
 
-.sub-heading {
+.language-texts {
 	color: var(--soft-dark);
-	margin: 10px 0;
+	margin: 40px 0 10px;
 }
 
 .language-logo-group {
@@ -109,7 +148,7 @@ a {
 .call-to-action {
 	color: var(--white);
 	background-color: var(--highlight-color);
-	padding: 10px;
+	padding: 10px 60px;
 	width: fit-content;
 	margin: 10px auto 0 auto;
 	border: 2px solid var(--highlight-color);
@@ -126,4 +165,24 @@ a {
 
 .call-to-action:hover a {
 	color: var(--highlight-color);
+}
+
+/* Media Queries */
+@media (max-width: 568px) {
+	.navbar {
+		display: none;
+	}
+
+	.navbar .side-menu-button {
+		display: block !important;
+	}
+
+	.heading-text {
+		font-size: 3.5rem;
+		margin-bottom: 20px;
+	}
+}
+
+@media (min-width: 568px) {
+	/*.open-slide{display:none}*/
 }
