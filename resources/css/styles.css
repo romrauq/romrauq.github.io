@@ -10,13 +10,8 @@
 	--white: #fff;
 	--grey-color: #f4f4f4;
 	--soft-dark: #4d4848;
-	--highlight-color: #0b8be5;
-	--logo-nav: 20px;
-}
-
-/* removing default dotted style from <li> tag elements */
-li {
-	list-style: none;
+	--highlight-blue: #0b8be5;
+	--nav-font-size: 20px;
 }
 
 /* removing default underline style from <a> tag elements */
@@ -32,56 +27,51 @@ a {
 	font-size: 1.5rem;
 	width: fit-content;
 	padding: 5px 5px;
+	background-color: var(--highlight-blue);
+	border-radius: 10px 0px;
 	display: none;
 	z-index: 10;
-	background-color: var(--highlight-color);
-	border-radius: 10px 0px;
 }
 
 .navbar {
 	position: absolute;
 	width: 100%;
 	display: flex;
-	font-size: var(--logo-nav);
+	font-size: var(--nav-font-size);
 	padding: 1rem;
 	justify-content: space-between;
-	background: var(--highlight-color);
+	background: var(--highlight-blue);
 	/*Add bottom border shadow*/
 	/* box-shadow: 60px 0px black; */
-	z-index: 10;
+	z-index: 5;
 }
 
+/* Side menu open button */
 .side-menu-button {
 	position: fixed;
 	top: 5px;
 	right: 5px;
-	z-index: 10;
+	display: none;
 }
 
+/* Side menu body */
 .side-menu {
-	height: 100%;
-	width: 0;
 	position: fixed;
-	z-index: 1;
 	top: 0;
 	right: 0;
+	height: 100%;
+	width: 0;
+	padding-top: 20px;
 	background-color: #111;
 	opacity: 0.9;
 	overflow-x: hidden;
-	padding-top: 60px;
 	transition: 0.5s;
+	z-index: 10;
 }
 
-.side-menu .btn-close {
-	position: absolute;
-	top: 0;
-	right: 22px;
-	font-size: 36px;
-	margin-left: -150px;
-}
-
+/* Side menu links */
 .side-menu a {
-	padding: 10px 10px 10px 30px;
+	padding: 20px 10px 10px 30px;
 	text-decoration: none;
 	font-size: 22px;
 	color: #ccc;
@@ -89,64 +79,61 @@ a {
 	transition: 0.3s;
 }
 
-.logo-image {
-	width: var(--logo-nav);
+/* Side menu close button */
+.side-menu .btn-close {
+	position: absolute;
+	top: -1.9rem;
+	right: 0rem;
+	font-size: 4rem;
 }
 
+/* Navbar area styles */
+.logo-image {
+	width: var(--nav-font-size);
+}
 .nav-text {
 	color: var(--white);
 }
-
 .nav-links {
 	display: flex;
 }
-
 .nav-links a {
 	color: var(--white);
 	padding: 0 15px;
 }
-
 .nav-links a:hover {
-	color: skyblue;
-	transition: 0.5s;
-}
-
-.main-showcase {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	font-size: 2rem;
-	background-color: var(--grey-color);
-	/* background: linear-gradient(to bottom, #f4f4f4, skyblue); */
-	z-index: 5;
+	color: blue;
+	transition: 0.7s;
 }
 
 .showcase-content {
-	position: relative;
+	font-size: 2rem;
+	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
 	width: fit-content;
+	/* background: linear-gradient(to bottom, #f4f4f4, skyblue); */
 }
 
 .heading-text {
-	color: var(--highlight-color);
+	color: var(--highlight-blue);
 	margin-bottom: 5px;
 }
 
 .profile-image {
-	width: 220px;
-	height: 220px;
-	margin-top: 5px;
+	width: 22rem;
+	height: 22rem;
+	margin-top: 0.5rem;
 	border-radius: 100%;
 }
 
 .language-texts {
-	color: var(--soft-dark);
+	color: var(--highlight-blue);
+	font-weight: bold;
 	margin: 10px 0 10px;
+	opacity: 0.7;
 }
 
 .language-logo-group {
@@ -161,42 +148,42 @@ a {
 }
 .call-to-action {
 	color: var(--white);
-	background-color: var(--highlight-color);
+	background-color: var(--highlight-blue);
 	padding: 10px 60px;
 	width: fit-content;
 	margin: 10px auto 0 auto;
-	border: 2px solid var(--highlight-color);
+	border: 2px solid var(--highlight-blue);
 	border-radius: 20px 0;
 	cursor: pointer;
 }
 
 .call-to-action:hover {
-	color: var(--highlight-color);
+	color: var(--highlight-blue);
 	background: rgba(0, 0, 0, 0);
-	border: 2px solid var(--highlight-color);
+	border: 2px solid var(--highlight-blue);
 	transition: 0.75s;
 }
 
 .call-to-action:hover a {
-	color: var(--highlight-color);
+	color: var(--highlight-blue);
 }
 
 /* Media Queries */
 @media (max-width: 568px) {
-	.minscreen-logo {
-		display: block;
-	}
-
 	.navbar {
 		display: none;
 	}
 
-	.navbar .side-menu-button {
-		display: block !important;
+	.minscreen-logo {
+		display: block;
+	}
+
+	.side-menu-button {
+		display: block;
 	}
 
 	.heading-text {
-		font-size: 3.5rem;
+		font-size: 2.5rem;
 		margin-bottom: 1rem;
 	}
 
@@ -210,6 +197,16 @@ a {
 	}
 }
 
+@media (max-width: 768px) {
+	.heading-text {
+		font-size: 2.5rem;
+		margin-top: 4.5rem;
+		margin-bottom: 1rem;
+	}
+}
+
 @media (min-width: 568px) {
-	/*.open-slide{display:none}*/
+	.open-slide {
+		display: none;
+	}
 }
