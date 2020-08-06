@@ -25,6 +25,19 @@ a {
 	text-decoration: none;
 }
 
+.minscreen-logo {
+	position: relative;
+	top: 0.5rem;
+	left: 0.5rem;
+	font-size: 1.5rem;
+	width: fit-content;
+	padding: 5px 5px;
+	display: none;
+	z-index: 10;
+	background-color: var(--highlight-color);
+	border-radius: 10px 0px;
+}
+
 .navbar {
 	position: absolute;
 	width: 100%;
@@ -133,7 +146,7 @@ a {
 
 .language-texts {
 	color: var(--soft-dark);
-	margin: 40px 0 10px;
+	margin: 10px 0 10px;
 }
 
 .language-logo-group {
@@ -144,6 +157,7 @@ a {
 
 .language-logos {
 	margin: 0 10px;
+	width: 5.7rem;
 }
 .call-to-action {
 	color: var(--white);
@@ -169,6 +183,10 @@ a {
 
 /* Media Queries */
 @media (max-width: 568px) {
+	.minscreen-logo {
+		display: block;
+	}
+
 	.navbar {
 		display: none;
 	}
@@ -179,7 +197,16 @@ a {
 
 	.heading-text {
 		font-size: 3.5rem;
-		margin-bottom: 20px;
+		margin-bottom: 1rem;
+	}
+
+	.language-texts {
+		font-size: 1.5rem;
+	}
+
+	.language-logos {
+		margin: 0 10px;
+		width: 4.5rem;
 	}
 }
 
