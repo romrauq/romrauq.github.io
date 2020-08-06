@@ -1,0 +1,3 @@
+function openSlideMenu() {}
+
+function closeSlideMenu() {}
