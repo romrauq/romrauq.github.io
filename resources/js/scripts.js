@@ -4,7 +4,7 @@ burgerButton.addEventListener("click", openSlideMenu);
 closeButton.addEventListener("click", closeSlideMenu);
 
 function openSlideMenu() {
-	document.getElementById("side-menu").style.width = "70vw";
+	document.getElementById("side-menu").style.width = "100vw";
 	document.getElementById("showcase-body").style.pointerEvents = "none";
 }
 

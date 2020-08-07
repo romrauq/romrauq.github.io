@@ -71,12 +71,13 @@ a {
 
 /* Side menu links */
 .side-menu a {
-	padding: 20px 10px 10px 30px;
-	text-decoration: none;
-	font-size: 22px;
+	text-align: center;
 	color: #ccc;
+	font-size: 2.5rem;
+	text-decoration: none;
+	padding: 15px 10px;
 	display: block;
-	transition: 0.3s;
+	transition: 0.5s;
 }
 
 /* Side menu close button */
