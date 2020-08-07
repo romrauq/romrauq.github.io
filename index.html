@@ -13,7 +13,7 @@
 		</div>
 
 		<span class="side-menu-button">
-			<a href="#" onclick="openSlideMenu()">
+			<a href="#" id="burger-btn">
 				<svg width="30" height="30">
 					<path d="M0,5 30,5" stroke="#0b8be5" stroke-width="5" />
 					<path d="M0,14 30,14" stroke="#0b8be5" stroke-width="5" />
@@ -23,7 +23,7 @@
 		</span>
 
 		<div id="side-menu" class="side-menu">
-			<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+			<a href="#" class="btn-close" id="close-btn">&times;</a>
 			<a href="#">Home</a>
 			<a href="#">My Projects</a>
 			<a href="#">About Me</a>
@@ -76,7 +76,10 @@
 					alt=""
 				/>
 			</div>
-			<p class="call-to-action"><a href="#">View My Projects</a></p>
+
+			<div class="call-to-action-div">
+				<button href="#" class="call-to-action">View My Projects</button>
+			</div>
 		</div>
 	</body>
 </html>
