@@ -178,6 +178,10 @@ a {
 		font-size: 2.5rem;
 		margin-bottom: 1rem;
 	}
+	.profile-image {
+		width: 18rem;
+		height: 18rem;
+	}
 	.language-texts {
 		font-size: 1.5rem;
 	}
@@ -194,7 +198,7 @@ a {
 @media (max-width: 768px) {
 	.heading-text {
 		font-size: 2.5rem;
-		margin-top: 4.5rem;
+		margin-top: 3rem;
 		margin-bottom: 1rem;
 	}
 }
