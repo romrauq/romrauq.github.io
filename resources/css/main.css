@@ -16,7 +16,6 @@
 
 /* removing default underline style from <a> tag elements */
 a {
-	color: var(--white);
 	text-decoration: none;
 }
 
@@ -34,7 +33,7 @@ a {
 }
 
 .navbar {
-	position: relative;
+	/* position: relative; */
 	width: 100%;
 	display: flex;
 	font-size: var(--nav-font-size);
@@ -42,7 +41,6 @@ a {
 	justify-content: space-between;
 	background: var(--highlight-blue);
 	/*Add bottom border shadow*/
-	/* box-shadow: 60px 0px black; */
 	z-index: 5;
 }
 
@@ -196,10 +194,13 @@ a {
 }
 
 @media (max-width: 768px) {
-	.heading-text {
-		font-size: 2.5rem;
+	.showcase-content {
 		margin-top: 3rem;
 		margin-bottom: 1rem;
+	}
+
+	.heading-text {
+		font-size: 3.5rem;
 	}
 }
 
