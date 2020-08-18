@@ -250,7 +250,8 @@ a {
 		width: 90vw;
 	}
 	/* skills, projects, about, contact (heading) mobile styles: */
-	.skills-heading .project-heading,
+	.skills-heading,
+	.project-heading,
 	.about-heading,
 	.contact-heading {
 		font-size: 2rem;
@@ -266,6 +267,6 @@ a {
 		line-height: 1.8rem;
 	}
 	.project-text a {
-		margin: 5px auto;
+		margin: 5px auto 0;
 	}
 }
