@@ -97,6 +97,9 @@ a {
 	border: 2px solid var(--highlight-blue);
 	transition: 0.75s;
 }
+.call-to-action:focus {
+	outline: none;
+}
 
 .skills-showcase,
 .project-showcase,
