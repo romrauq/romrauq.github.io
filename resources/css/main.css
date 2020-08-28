@@ -4,7 +4,6 @@
 	box-sizing: border-box;
 	list-style: none;
 }
-
 :root {
 	font-size: 10px;
 	font-family: sans-serif;
@@ -14,7 +13,6 @@
 	--highlight-blue: #0b8be5;
 	--nav-font-size: 20px;
 }
-
 a {
 	text-decoration: none;
 }
@@ -23,11 +21,11 @@ a {
 .navbar {
 	width: 100%;
 	display: flex;
+	justify-content: space-between;
 	font-size: var(--nav-font-size);
 	padding: 1rem;
-	justify-content: space-between;
 	background: var(--highlight-blue);
-	/*Add bottom border shadow*/
+	/*Add bottom drop shadow*/
 	z-index: 5;
 }
 .logo-image {
@@ -47,18 +45,19 @@ a {
 	color: skyblue;
 	transition: 0.7s;
 }
-
 /* Main showcase styles: */
 .homepage-showcase {
 	font-size: 2rem;
 	text-align: center;
 	width: fit-content;
-	margin: 3rem auto 0;
+	padding: 1rem;
+	margin: 1.5rem auto 0;
 }
 .heading-text {
 	color: var(--highlight-blue);
 	text-align: center;
 	margin-bottom: 0.5rem;
+	cursor: default;
 }
 .profile-image {
 	width: 22rem;
@@ -70,6 +69,7 @@ a {
 	font-weight: bold;
 	margin: 5px 0 10px;
 	opacity: 0.7;
+	cursor: default;
 }
 .language-logo-group {
 	display: flex;
@@ -80,7 +80,7 @@ a {
 	margin: 0 10px;
 	width: 5.7rem;
 }
-.call-to-action {
+.call-to-action-button {
 	color: var(--white);
 	font-size: 2rem;
 	padding: 10px 60px;
@@ -91,7 +91,7 @@ a {
 	border-radius: 20px 0;
 	cursor: pointer;
 }
-.call-to-action:hover {
+.call-to-action-button:hover {
 	color: var(--highlight-blue);
 	background: rgba(255, 255, 255, 0);
 	border: 2px solid var(--highlight-blue);
@@ -100,7 +100,7 @@ a {
 .call-to-action:focus {
 	outline: none;
 }
-
+/* Individual pages' "showcase" styles: */
 .skills-showcase,
 .project-showcase,
 .about-showcase,
@@ -109,7 +109,7 @@ a {
 	padding: 10px;
 	margin: 1.5rem auto 0;
 }
-
+/* Individual pages' "section" styles: */
 .skills-section,
 .project-section,
 .about-section,
@@ -121,11 +121,13 @@ a {
 	border: 1px solid #666;
 	border-radius: 10px;
 }
+/* Projects & Skills pages' "heading" styles: */
 .project-heading,
 .skills-heading {
 	color: var(--highlight-blue);
 	font-size: 2rem;
 }
+/* Individual pages' "text content" styles: */
 .skills-text,
 .project-text,
 .about-text,
@@ -133,6 +135,7 @@ a {
 	font-size: 1.8rem;
 	line-height: 2rem;
 }
+/* Projects page 'links" styles: */
 .project-text a {
 	display: block;
 	color: white;
@@ -148,9 +151,9 @@ a {
 	color: var(--highlight-blue);
 	background-color: white;
 }
-
-/* Mobile screen logo tab styles: */
+/* logo tab (only visible on mobile screens) styles: */
 .minscreen-logo {
+	display: none;
 	position: fixed;
 	top: 0.7rem;
 	left: 0.5rem;
@@ -158,18 +161,17 @@ a {
 	width: fit-content;
 	padding: 5px 5px;
 	background-color: var(--highlight-blue);
-	border-radius: 10px 0px;
-	display: none;
+	border-radius: 10px 2px;
 	z-index: 10;
 }
-/* Side menu open button */
+/* Side menu open button styles:*/
 .side-menu-button {
+	display: none;
 	position: fixed;
 	top: 5px;
 	right: 5px;
-	display: none;
 }
-/* Side menu body */
+/* Side menu styles: */
 .side-menu {
 	position: fixed;
 	top: 0;
@@ -183,7 +185,7 @@ a {
 	transition: 0.5s;
 	z-index: 10;
 }
-/* Side menu links */
+/* Side menu "link" styles; */
 .side-menu a {
 	color: #ccc;
 	font-size: 2.5rem;
@@ -193,14 +195,15 @@ a {
 	display: block;
 	transition: 0.2s;
 }
-/* Side menu close button */
+/* Side menu "close button" styles: */
 .side-menu .btn-close {
 	position: absolute;
 	top: -1.9rem;
 	right: 0rem;
 	font-size: 4rem;
 }
-/* Mobile Screen Styles: */
+
+/*---------------------------- Mobile Screen Styles: */
 @media (max-width: 568px) {
 	.navbar {
 		display: none;
@@ -218,7 +221,7 @@ a {
 	.heading-text {
 		font-size: 3rem;
 		line-height: 3rem;
-		margin-bottom: 0.5rem;
+		margin-bottom: 2rem;
 	}
 	.profile-image {
 		width: 15rem;
@@ -235,7 +238,7 @@ a {
 		font-size: 1.5rem;
 		padding: 10px 35px;
 	}
-	/* skills, projects, about, contact (showcase) mobile styles: */
+	/* Skills, Projects, About & Contact (showcase) mobile styles: */
 	.skills-showcase,
 	.project-showcase,
 	.about-showcase,
@@ -245,23 +248,22 @@ a {
 		padding: 10px;
 		margin: 3rem auto 0;
 	}
-	/* skills, projects, about, contact (section) mobile styles: */
+	/* Skills, Projects, About & Contact (section) mobile styles: */
 	.skills-section,
 	.project-section,
 	.about-section,
 	.contact-section {
 		width: 90vw;
 	}
-	/* skills, projects, about, contact (heading) mobile styles: */
+	/* Skills, Projects, About & Contact (heading) mobile styles: */
 	.skills-heading,
 	.project-heading,
 	.about-heading,
 	.contact-heading {
 		font-size: 2rem;
-		color: var(--highlight-blue);
 		text-align: center;
 	}
-	/* skills, projects, about, contact (text) mobile styles: */
+	/* Skills, Projects, About & Contact (text) mobile styles: */
 	.skills-text,
 	.project-text,
 	.about-text,
