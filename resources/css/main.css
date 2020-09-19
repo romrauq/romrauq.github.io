@@ -6,7 +6,7 @@
 }
 :root {
 	font-size: 10px;
-	font-family: sans-serif;
+	font-family: Tahoma;
 	--white: #fff;
 	--grey-color: #f4f4f4;
 	--soft-dark: #4d4848;
@@ -19,13 +19,16 @@ a {
 
 /* Navbar styles: */
 .navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	font-size: var(--nav-font-size);
 	padding: 1rem;
 	background: var(--highlight-blue);
-	/*Add bottom drop shadow*/
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 	z-index: 5;
 }
 .logo-image {
@@ -51,7 +54,7 @@ a {
 	text-align: center;
 	width: fit-content;
 	padding: 1rem;
-	margin: 1.5rem auto 0;
+	margin: 5.5rem auto 0;
 }
 .heading-text {
 	color: var(--highlight-blue);
@@ -107,7 +110,7 @@ a {
 .contact-showcase {
 	font-size: 2rem;
 	padding: 10px;
-	margin: 1.5rem auto 0;
+	margin: 5.5rem auto 0;
 }
 /* Individual pages' "section" styles: */
 .skills-section,
@@ -132,6 +135,7 @@ a {
 .project-text,
 .about-text,
 .contact-text {
+	color: rgb(25, 25, 25);
 	font-size: 1.8rem;
 	line-height: 2rem;
 }
@@ -203,7 +207,7 @@ a {
 	font-size: 4rem;
 }
 
-/*---------------------------- Mobile Screen Styles: */
+/*---------------------------- Mobile Phone Screen Styles: */
 @media (max-width: 568px) {
 	.navbar {
 		display: none;
