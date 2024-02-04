@@ -35,7 +35,10 @@ a {
 	width: var(--nav-font-size);
 }
 .nav-text {
-	color: var(--white);
+	color: var(--highlight-blue);
+	padding: 5px 10px;
+	background-color: var(--white);
+	border-radius: 10px 2px;
 }
 .nav-links {
 	display: flex;
