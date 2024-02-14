@@ -217,13 +217,21 @@ a {
 	}
 	.minscreen-logo {
 		display: block;
+		background-color: var(--highlight-blue);
+	}
+	.nav-text {
+		color: var(--white);
+		background-color: var(--highlight-blue);
 	}
 	.side-menu-button {
 		display: block;
 	}
 	/* Homepage mobile styles: */
 	.homepage-showcase {
-		margin-top: 4rem;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		/* justify-content: center; */
 	}
 	.heading-text {
 		font-size: 3rem;
@@ -233,6 +241,7 @@ a {
 	.profile-image {
 		width: 15rem;
 		height: 15rem;
+		align-self: center;
 	}
 	.language-texts {
 		font-size: 1.5rem;
