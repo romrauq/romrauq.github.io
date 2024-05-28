@@ -13,10 +13,14 @@
 	--highlight-blue: #0b8be5;
 	--nav-font-size: 20px;
 }
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+}
 a {
 	text-decoration: none;
 }
-
 /* Navbar styles: */
 .navbar {
 	position: fixed;
@@ -25,10 +29,11 @@ a {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	align-content: center;
 	font-size: var(--nav-font-size);
 	padding: 1rem;
 	background: var(--highlight-blue);
-	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);
 	z-index: 5;
 }
 .logo-image {
@@ -36,7 +41,7 @@ a {
 }
 .nav-text {
 	color: var(--highlight-blue);
-	padding: 5px 10px;
+	padding: 10px;
 	background-color: var(--white);
 	border-radius: 10px 2px;
 }
@@ -45,24 +50,25 @@ a {
 }
 .nav-links a {
 	color: var(--white);
-	padding: 0 15px;
+	padding: 10px 15px;
 }
 .nav-links a:hover {
 	color: skyblue;
 	transition: 0.7s;
+	background-color: red;
 }
 /* Main showcase styles: */
 .homepage-showcase {
+	position: absolute;
+	align-self: center;
 	font-size: 2rem;
 	text-align: center;
 	width: fit-content;
-	padding: 1rem;
-	margin: 5.5rem auto 0;
 }
 .heading-text {
 	color: var(--highlight-blue);
 	text-align: center;
-	margin-bottom: 0.5rem;
+	margin: 0 0 0.5rem 0;
 	cursor: default;
 }
 .profile-image {
@@ -166,7 +172,7 @@ a {
 	left: 0.5rem;
 	font-size: 1.5rem;
 	width: fit-content;
-	padding: 5px 5px;
+	/* padding: 5px 5px; */
 	background-color: var(--highlight-blue);
 	border-radius: 10px 2px;
 	z-index: 10;
