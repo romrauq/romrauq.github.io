@@ -249,6 +249,17 @@ a {
         align-content: center;
         /* justify-content: center; */
     }
+    .skills-section,
+.project-section,
+.about-section,
+.contact-section {
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto 15px;
+    background-color: #f4f4f4;
+    border: 1px solid #666;
+    border-radius: 10px;
+}
     .heading-text {
         font-size: 3rem;
         line-height: 3rem;
