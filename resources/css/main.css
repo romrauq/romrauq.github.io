@@ -48,12 +48,14 @@ a {
 .nav-text {
 	color: var(--highlight-blue);
 	padding: 10px;
+	margin: 0 0 0 5%;
 	background-color: var(--white);
 	border-radius: 10px 2px;
 }
 
 .nav-links {
 	display: flex;
+	margin: 0 5% 0 0;
 }
 
 .nav-links a {
@@ -274,6 +276,7 @@ a {
 	.nav-text {
 		color: var(--white);
 		background-color: var(--highlight-blue);
+		margin: 0 0 0 0;
 	}
 
 	.side-menu-button {
