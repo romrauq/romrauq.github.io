@@ -27,6 +27,7 @@ body {
 	align-content: center;
 	font-size: var(--nav-font-size);
 	padding: 1rem;
+	margin: 0 0 2rem 0;
 	background: var(--highlight-blue);
 	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
 	z-index: 5;
