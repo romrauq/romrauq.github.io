@@ -176,65 +176,31 @@ body {
 	background-color: white;
 }
 /* logo tab (only visible on mobile screens) styles: */
-.minscreen-logo {
+.navbar-mobile {
 	display: none;
-	position: fixed;
-	top: 0.7rem;
-	left: 0.5rem;
-	font-size: 1.5rem;
-	width: fit-content;
-	/* padding: 5px 5px; */
-	background-color: var(--highlight-blue);
-	border-radius: 10px 2px;
-	z-index: 10;
 }
 /* Side menu open button styles:*/
 .side-menu-button {
 	display: none;
-	position: fixed;
-	top: 10px;
-	right: 10px;
-}
-/* Side menu styles: */
-.side-menu {
-	position: fixed;
-	top: 0;
-	right: 0;
-	height: 100%;
-	width: 0;
-	padding-top: 20px;
-	background-color: #111;
-	opacity: 0.9;
-	overflow-x: hidden;
-	transition: 0.5s;
-	z-index: 10;
-}
-/* Side menu "link" styles; */
-.side-menu a {
-	color: #ccc;
-	font-size: 2.5rem;
-	text-align: center;
-	text-decoration: none;
-	padding: 15px 10px;
-	display: block;
-	transition: 0.2s;
-}
-/* Side menu "close button" styles: */
-.side-menu .btn-close {
-	position: absolute;
-	top: -1.9rem;
-	right: 0rem;
-	font-size: 4rem;
 }
 /*---------------------------- Mobile Phone Screen Styles: */
 @media (max-width: 568px) {
 	.navbar {
 		display: none;
 	}
-
+	.navbar-mobile {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 90%;
+		margin: 10px 0 4rem 0;
+	}
 	.minscreen-logo {
-		display: block;
+		font-size: 1.5rem;
+		font-weight: 600;
+		width: fit-content;
 		background-color: var(--highlight-blue);
+		border-radius: 10px 2px;
 	}
 
 	.nav-text {
@@ -245,6 +211,38 @@ body {
 	.side-menu-button {
 		display: block;
 	}
+	/* Side menu styles: */
+	.side-menu {
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 0;
+		padding-top: 20px;
+		background-color: #111;
+		opacity: 0.9;
+		overflow-x: hidden;
+		transition: 0.5s;
+		z-index: 10;
+	}
+	/* Side menu "link" styles; */
+	.side-menu a {
+		color: #ccc;
+		font-size: 2.5rem;
+		text-align: center;
+		text-decoration: none;
+		padding: 15px 10px;
+		display: block;
+		transition: 0.2s;
+	}
+	/* Side menu "close button" styles: */
+	.side-menu .btn-close {
+		position: absolute;
+		top: -1.9rem;
+		right: 0rem;
+		font-size: 4rem;
+	}
+
 	/* Homepage mobile styles: */
 	.homepage-showcase {
 		display: flex;
