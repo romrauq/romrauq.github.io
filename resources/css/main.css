@@ -16,14 +16,11 @@
 body {
 	height: 100vh;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
 }
 /* Navbar styles: */
 .navbar {
-	position: fixed;
-	top: 0;
-	left: 0;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -130,13 +127,9 @@ body {
 	outline: none;
 }
 /* Individual pages' "showcase" styles: */
-.skills-showcase,
-.project-showcase,
-.about-showcase,
-.contact-showcase {
+.page-showcase {
 	font-size: 2rem;
 	padding: 10px;
-	margin: 5.5rem auto 0;
 }
 /* Individual pages' "section" styles: */
 .skills-section,
