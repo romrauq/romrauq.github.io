@@ -17,6 +17,7 @@ body {
 	height: 100vh;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 /* Navbar styles: */
 .navbar {
@@ -62,8 +63,10 @@ body {
 }
 /* Main showcase styles: */
 .homepage-showcase {
-	position: absolute;
-	align-self: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
 	font-size: 2rem;
 	text-align: center;
 	width: fit-content;
@@ -77,36 +80,33 @@ body {
 	}
 
 	50% {
-		transform: translateY(-10px);
-		/* Adjust the pixel value for the desired float effect */
+		transform: translateY(-3px);
+		/* Increase translateY() value to increase movement distance */
+		/* Decrease translateY() value to decrease movement distance */
 	}
 }
 .heading-text {
 	color: var(--highlight-blue);
-	text-align: center;
-	margin: 0 0 0.5rem 0;
 	cursor: default;
 }
 .profile-image {
-	width: 22rem;
-	height: 22rem;
+	width: 16rem;
+	height: 16rem;
 	border-radius: 100%;
 }
 .language-texts {
 	color: var(--highlight-blue);
-	font-weight: bold;
-	margin: 5px 0 10px;
-	opacity: 0.7;
+	font-weight: 500;
 	cursor: default;
 }
 .language-logo-group {
 	display: flex;
 	width: fit-content;
-	margin: 5px auto 0;
+	gap: 10px;
 }
 .language-logos {
-	margin: 0 10px;
-	width: 5.7rem;
+	height: 4rem;
+	width: 4rem;
 }
 .call-to-action-button {
 	color: var(--white);
@@ -116,13 +116,14 @@ body {
 	margin: 25px auto 0;
 	background-color: var(--highlight-blue);
 	border: 2px solid var(--highlight-blue);
-	border-radius: 20px 0;
+	border-radius: 30px;
 	cursor: pointer;
 }
 .call-to-action-button:hover {
 	color: var(--highlight-blue);
 	background: rgba(255, 255, 255, 0);
 	border: 2px solid var(--highlight-blue);
+	box-shadow: 0 0 8px var(--highlight-blue);
 	transition: 0.75s;
 }
 .call-to-action:focus {
